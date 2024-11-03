@@ -91,6 +91,10 @@
               <template v-if="dayAfterLastMove === 0">
 
                 <div>
+                  {{ textToday }}
+                </div>
+                <div class="space"></div>
+                <div>
                   今天听银禾小姐唱歌了喵!
                 </div>
                 <div class="space"></div>
@@ -109,6 +113,10 @@
               </template>
               <template v-else-if="dayAfterLastMove < 7">
 
+                <div>
+                  {{ textToday }}
+                </div>
+                <div class="space"></div>
                 <div>
                   今天是银禾小姐
                 </div>
@@ -132,6 +140,10 @@
               </template>
               <template v-else>
 
+                <div>
+                  {{ textToday }}
+                </div>
+                <div class="space"></div>
                 <div class="tertiary-text">
                   已经 {{ dayAfterLastMove }} 天
                 </div>
@@ -168,7 +180,7 @@
     <a href="https://github.com/FirokOtaku/book-of-lumen" target="_blank">
       <div>
         <div>
-          Book of Lumen v0.1.0 (2024-11-03)
+          Book of Lumen v{{ version }} (2024-11-03)
         </div>
         <div>
           Design of Firok
@@ -187,6 +199,7 @@
 
 <script setup>
 
+import {version} from '../package.json'
 import {ref, onBeforeMount, onBeforeUnmount, computed, shallowRef,} from 'vue'
 import { debounce } from 'lib-opal/lib/util.js'
 
@@ -259,6 +272,12 @@ const dayAfterLastMove = computed(() => {
   return Math.floor((now - lastMoveDate) / (1000 * 60 * 60 * 24)) // 计算从最后一次活动到今天之间的天数差
 })
 
+function padStart(num)
+{
+  return num.toString().padStart(2, '0')
+}
+const today = new Date()
+const textToday = `${today.getFullYear()}-${padStart(today.getMonth() + 1)}-${padStart(today.getDate())}`
 
 onBeforeMount(() => {
   window.addEventListener('resize', onResize)
