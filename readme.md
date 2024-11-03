@@ -10,19 +10,19 @@
 ~~我不是管人痴~~  
 ~~我不是管人痴~~
 
-银禾 Lumen 可爱喵
+[银禾 Lumen 的 Bilibili 个人空间](https://space.bilibili.com/3546608903915553/)
 
-关注银禾 Lumen 喵
-
-关注银禾 Lumen 谢谢喵
+[银禾 Lumen 的直播间](https://live.bilibili.com/31770358)
 
 ~~我不是管人痴~~  
 ~~我不是管人痴~~  
 ~~我不是管人痴~~
 
-[银禾 Lumen 的 Bilibili 个人空间](https://space.bilibili.com/3546608903915553/)
+银禾 Lumen 可爱喵
 
-[银禾 Lumen 的直播间](https://live.bilibili.com/31770358)
+关注银禾 Lumen 喵
+
+关注银禾 Lumen 谢谢喵
 
 ------
 
