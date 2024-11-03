@@ -47,7 +47,7 @@
 
 body
 {
-  background-image: url('./block-planks-birch.png');
+  background-image: url('/block-planks-birch.png');
   background-size: calc(48px * var(--scale, 1)) calc(48px * var(--scale, 1));;
 }
 
