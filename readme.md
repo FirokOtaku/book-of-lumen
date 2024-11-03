@@ -6,6 +6,8 @@
 
 一个银禾 Lumen 的饭制站点
 
+[在线访问](https://book-of-lumen.firok.space)
+
 ~~我不是管人痴~~  
 ~~我不是管人痴~~  
 ~~我不是管人痴~~

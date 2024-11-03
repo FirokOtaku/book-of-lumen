@@ -40,6 +40,17 @@
   --surface-container-highest:#e0e3e2;
 }
 
+.trans, .trans > *, body, .tiny-space, .small-space, .space, span, image
+{
+  transition: all ease-in-out 0.5s;
+}
+
+body
+{
+  background-image: url('./block-planks-birch.png');
+  background-size: calc(48px * var(--scale, 1)) calc(48px * var(--scale, 1));;
+}
+
 .book-page-left
 {
   background-image: url('/book-page-left.png');

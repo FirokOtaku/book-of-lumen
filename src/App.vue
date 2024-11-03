@@ -1,20 +1,17 @@
 
 <style scoped>
-.trans, .trans > *
-{
-  transition: all ease-in-out 0.5s;
-}
+
 .tiny-space
 {
-  margin: calc(1px * var(--scale, 1));
+  block-size: calc(4px * var(--scale, 1));
 }
 .small-space
 {
-  margin: calc(2px * var(--scale, 1));
+  block-size: calc(8px * var(--scale, 1));
 }
 .space
 {
-  margin: calc(4px * var(--scale, 1));
+  block-size: calc(16px * var(--scale, 1));
 }
 </style>
 
@@ -176,7 +173,7 @@
 
   </div>
 
-  <div class="fixed right bottom right-align grey-text small-text tiny-line small-opacity">
+  <div class="fixed right bottom right-align pink-text small-text tiny-line padding">
     <a href="https://github.com/FirokOtaku/book-of-lumen" target="_blank">
       <div>
         <div>
@@ -221,6 +218,8 @@ const ps = computed(() => {
   const coreWidth = baseWidth - coreMargin, coreHeight = baseHeight - coreMargin // 核心显示区域尺寸
   const coreScale = coreWidth / coreOriginWidth // 核心显示缩放
   const coreOffsetX = displayStateValue === 'right' ? - coreScale * pageWidth : 0
+
+  document.body.style.setProperty('--scale', coreScale)
 
   return {
     baseWidth, baseHeight,
