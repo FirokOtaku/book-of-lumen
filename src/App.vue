@@ -177,7 +177,7 @@
     <a href="https://github.com/FirokOtaku/book-of-lumen" target="_blank">
       <div>
         <div>
-          Book of Lumen v{{ version }} (2024-11-03)
+          Book of Lumen v{{ version }} (2024-11-04)
         </div>
         <div>
           Design of Firok
@@ -214,7 +214,7 @@ const ps = computed(() => {
   const baseWidth = coreOriginWidth * baseScale, baseHeight = coreOriginHeight * baseScale // 基础显示区域尺寸
   const baseMarginX = (screenX - baseWidth) / 2, baseMarginY = (screenY - baseHeight) / 2 // 基础显示区域边距
 
-  const coreMargin = 60 // 核心显示区域边距
+  const coreMargin = 40 // 核心显示区域边距
   const coreWidth = baseWidth - coreMargin, coreHeight = baseHeight - coreMargin // 核心显示区域尺寸
   const coreScale = coreWidth / coreOriginWidth // 核心显示缩放
   const coreOffsetX = displayStateValue === 'right' ? - coreScale * pageWidth : 0
@@ -268,7 +268,7 @@ const dayAfterLastMove = computed(() => {
   const lastMove = LumenMoves[LumenMoves.length - 1]
   const lastMoveDate = new Date(lastMove.date)
   const now = new Date()
-  return Math.floor((now - lastMoveDate) / (1000 * 60 * 60 * 24)) // 计算从最后一次活动到今天之间的天数差
+  return Math.ceil((now - lastMoveDate) / (1000 * 60 * 60 * 24)) // 计算从最后一次活动到今天之间的天数差
 })
 
 function padStart(num)
